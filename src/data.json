@@ -1,0 +1,247 @@
+{
+    "navItems": [
+        {
+            "href": "#header",
+            "title": "Home"
+        },
+        {
+            "href": "#services",
+            "title": "Services"
+        },
+        {
+            "href": "#about",
+            "title": "About"
+        },
+        {
+            "href": "#works",
+            "title": "Works"
+        },
+        {
+            "href": "#blog",
+            "title": "Blog"
+        },
+        {
+            "href": "#clients",
+            "title": "Clients"
+        },
+        {
+            "href": "#contact",
+            "title": "Contact"
+        }
+    ],
+    "servicesItems": [
+        {
+            "iconClass": "fa-font",
+            "title": "clean typography",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum."
+        },
+        {
+            "iconClass": "fa-code",
+            "title": "rock solid code",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum."
+        },
+        {
+            "iconClass": "fa-life-ring",
+            "title": "expert support",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum."
+        }
+    ],
+    "teamItems": [
+        {
+            "name": "md. khalil uddin",
+            "post": "Head of Ideas",
+            "socials": {
+                "facebook": "https://www.facebook.com/",
+                "twitter": "https://twitter.com/",
+                "linkedin": "https://ru.linkedin.com/",
+                "google-plus": "https://plus.google.com/collections/featured?hl=ru"
+            }
+        },
+        {
+            "name": "rubel miah",
+            "post": "Lead WordPress Developer",
+            "socials": {
+                "facebook": "https://www.facebook.com/",
+                "twitter": "https://twitter.com/",
+                "linkedin": "https://ru.linkedin.com/",
+                "google-plus": "https://plus.google.com/collections/featured?hl=ru"
+            }
+        },
+        {
+            "name": "shamim mia",
+            "post": "Sr. Web Developer",
+            "socials": {
+                "facebook": "https://www.facebook.com/",
+                "twitter": "https://twitter.com/",
+                "linkedin": "https://ru.linkedin.com/",
+                "google-plus": "https://plus.google.com/collections/featured?hl=ru"
+            }
+        },
+        {
+            "name": "john doe",
+            "post": "Front-end Developer",
+            "socials": {
+                "facebook": "https://www.facebook.com/",
+                "twitter": "https://twitter.com/",
+                "linkedin": "https://ru.linkedin.com/",
+                "google-plus": "https://plus.google.com/collections/featured?hl=ru"
+            }
+        },
+        {
+            "name": "md. khalil uddin",
+            "post": "Head of Ideas",
+            "socials": {
+                "facebook": "https://www.facebook.com/",
+                "twitter": "https://twitter.com/",
+                "linkedin": "https://ru.linkedin.com/",
+                "google-plus": "https://plus.google.com/collections/featured?hl=ru"
+            }
+        },
+        {
+            "name": "rubel miah",
+            "post": "Lead WordPress Developer",
+            "socials": {
+                "facebook": "https://www.facebook.com/",
+                "twitter": "https://twitter.com/",
+                "linkedin": "https://ru.linkedin.com/",
+                "google-plus": "https://plus.google.com/collections/featured?hl=ru"
+            }
+        },
+        {
+            "name": "shamim mia",
+            "post": "Sr. Web Developer",
+            "socials": {
+                "facebook": "https://www.facebook.com/",
+                "twitter": "https://twitter.com/",
+                "linkedin": "https://ru.linkedin.com/",
+                "google-plus": "https://plus.google.com/collections/featured?hl=ru"
+            }
+        },
+        {
+            "name": "john doe",
+            "post": "Front-end Developer",
+            "socials": {
+                "facebook": "https://www.facebook.com/",
+                "twitter": "https://twitter.com/",
+                "linkedin": "https://ru.linkedin.com/",
+                "google-plus": "https://plus.google.com/collections/featured?hl=ru"
+            }
+        }
+    ],
+    "worksItems": [
+        {
+            "category": "branding",
+            "title": "Hair Dresser"
+        },
+        {
+            "category": "design",
+            "title": "Hair Dresser"
+        },
+        {
+            "category": "development",
+            "title": "Hair Dresser"
+        },
+        {
+            "category": "branding",
+            "title": "Hair Dresser"
+        },
+        {
+            "category": "design",
+            "title": "Hair Dresser"
+        },
+        {
+            "category": "strategy",
+            "title": "Hair Dresser"
+        },
+        {
+            "category": "branding",
+            "title": "Hair Dresser"
+        },
+        {
+            "category": "design",
+            "title": "Hair Dresser"
+        },
+        {
+            "category": "strategy",
+            "title": "Hair Dresser"
+        }
+    ],
+    "blogItems": [
+        {
+            "day": "18",
+            "month": "oct",
+            "title": "startup ideas needs to be funded",
+            "author": "Khalil Uddin",
+            "category": "Development",
+            "shortDescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam"
+        },
+        {
+            "day": "20",
+            "month": "dec",
+            "title": "startup ideas needs to be funded",
+            "author": "Khalil Uddin",
+            "category": "Development",
+            "shortDescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam"
+        }
+    ],
+    "companiesItems": [
+        "Deorham Networks",
+        "Ratings",
+        "Malik Media",
+        "Bcause",
+        "Wompily"
+    ],
+    "testimonialsItems": [
+        {
+            "text": "Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum",
+            "author": "John Doe, Google Inc."
+        },
+        {
+            "text": "Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum",
+            "author": "John Doe, Google Inc."
+        },
+        {
+            "text": "Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum",
+            "author": "John Doe, Google Inc."
+        }
+    ],
+    "contactDataItems": [
+        {
+            "iconClass": "fa-map-marker",
+            "type": "address",
+            "data": "312, 7th Ave, New York<br>NY 101200, United States of America"
+        },
+        {
+            "iconClass": "fa-mobile",
+            "type": "hotline(24X7)",
+            "data": "+65 0052 300, +65 88251 210<br>+88 01723 511 340"
+        },
+        {
+            "iconClass": "fa-envelope-o",
+            "type": "e-mail",
+            "data": "shapedtheme@gmail.com<br>khalilkode@gmail.com"
+        }
+    ],
+    "companySocials": [
+        {
+            "link": "https://twitter.com",
+            "className": "twitter",
+            "name": "Twitter"
+        },
+        {
+            "link": "https://www.facebook.com/",
+            "className": "facebook",
+            "name": "Facebook"
+        },
+        {
+            "link": "https://www.instagram.com/",
+            "className": "instagram",
+            "name": "Instagram"
+        },
+        {
+            "link": "https://plus.google.com/collections/featured?hl=ru",
+            "className": "google-plus",
+            "name": "Google +"
+        }
+    ] 
+}

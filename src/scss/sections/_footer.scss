@@ -1,0 +1,43 @@
+.footer {
+  @include stn-padding();
+  background-color: $red;
+  .socials {
+    &::after {
+      content: '';
+      display: block;
+      background-color: $white;
+      height: 2px;
+      width: 50px;
+      margin: 23px auto;
+    }
+    &__item {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 2px solid $white;
+      margin: 0 6px;
+      line-height: 32px;
+      transition: .2s all;
+      font-size: 16px;
+      color: $white;
+      &:hover {
+        background-color: $white;
+        color: $red;
+      }
+    }
+  }
+}
+
+.license {
+  color: $white;
+  text-transform: uppercase;
+  line-height: 20px;
+  padding: 0 15px;
+}
+
+@media (max-width: 700px) {
+  .footer {
+    padding: 30px 0;
+  }
+}

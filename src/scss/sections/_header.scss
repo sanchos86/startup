@@ -1,0 +1,60 @@
+.header {
+    min-height: 768px;
+    background-image: url(../images/home.png);
+    background-position: center;
+    background-size: cover;
+    padding: 319px 15px 255px;
+    color: $white;
+    &__heading {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font: {
+            family: $mt;
+            size: 44px;
+            weight: 700;
+        };
+    }
+    &__text {
+        font-size: 16px;
+        margin: 26px 0 55px;
+        letter-spacing: 2px;
+    }
+    &__link {
+        display: inline-block;
+        width: 180px;
+        height: 47px;
+        line-height: 47px;
+        border-radius: 2px;
+        border: 1px solid $white;
+        background-color: transparent;
+        color: $white;
+        text-transform: uppercase;
+        transition: all .3s;
+        letter-spacing: 1px;
+        font: {
+            family: $mt;
+            size: 16px;
+            weight: 400;
+        }
+        &:hover {
+            background-color: $white;
+            color: $red;
+            cursor: pointer;
+        }
+    }
+}
+.typed-cursor {
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@media (max-width: 900px) {
+    .header {
+        min-height: auto;
+        padding: 200px 15px 150px;
+    }
+}

@@ -1,0 +1,51 @@
+.clients {
+  @include stn-padding();
+  background-color: #f8f8f8;
+}
+
+.companies {
+  margin-bottom: 85px;
+  &__item {
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 30px 10px;
+  }
+  &__image {
+    vertical-align: middle;
+  }
+}
+.testimonials {
+  @include container($mw: 790px);
+  &-item {
+    &__text {
+      line-height: 30px;
+      font: {
+        size: 16px;
+        style: italic;
+      };
+    }
+    &__author {
+      margin: 35px 0 5px;
+      font-size: 18px;
+    }
+  }
+  .owl-dots{
+    margin-top: 30px;
+  }
+  .owl-dot{
+    display: inline-block;
+    margin: 0 3px;
+    width: 13px;
+    height: 13px;
+    background: #dddddd;
+    border-radius: 50%;
+    border: 1px solid $red !important;
+    &.active{
+      background-color: $red;
+    }
+    &:hover{
+      background-color: $red;
+    }
+  }
+}

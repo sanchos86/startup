@@ -1,0 +1,57 @@
+@mixin stn-padding() {
+    padding: 100px 0;
+    @media (max-width: 900px) {
+        padding: 75px 0;
+    }
+}
+
+@mixin container($mw: 1170px, $pd-l: 15px, $pd-r: 15px) {
+    margin: 0 auto;
+    max-width: $mw;
+    padding-right: $pd-r;
+    padding-left: $pd-l;
+}
+
+@mixin stn-heading() {
+    font: {
+        family: $mt;
+        size: 20px;
+    }
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      display: block;
+      background: $gray;
+      width: 50px;
+      height: 2px;
+      margin: 25px auto;
+    }
+}
+
+@mixin stn-description() {
+  font-size: 16px;
+  padding: 0 15px;
+  line-height: 24px;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+}
+
+@mixin pl-fade-out($duration: 200ms, $tt: uppercase) {
+  input,
+  textarea {
+    @include placeholder {
+      opacity: 1;
+      transition: opacity $duration ease-in-out;
+      text-transform: $tt;
+    }
+    &:focus {
+      @include placeholder {
+        opacity: 0;
+      }
+    }
+  }
+}

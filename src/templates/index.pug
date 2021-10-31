@@ -1,0 +1,188 @@
+include extra/mixins.pug
+-function ucfirst(str) {
+-   return str.charAt(0).toUpperCase() + str.slice(1);
+-}
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='x-ua-compatible' content='ie=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description' content='Sed do eiusmod tempor incididunt ut labore et dolore')
+        title StartUp
+        link(rel='preload' href='images/home.png' as='image')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    body
+        div(class='sticky-nav')
+            div(class='container')
+                h1(class='logo')
+                    a(class='logo__link' href='#header') StartUp
+                nav(class='main-nav' role='navigation')
+                    ul(class='main-nav__list')
+                        each val in navItems
+                            li(class='main-nav__item')
+                                a(class='main-nav__link' href=`${val.href}`)= val.title
+                    div(class='hamburger hamburger--elastic')
+                        div(class='hamburger-box')
+                            div(class='hamburger-inner')
+        header(class='header' id='header')
+            h2(class='header__heading') welcome to&nbsp;
+                span(class='element')
+            p(class='header__text') Your Favourite Creative Agency Template
+            a(href='#services' class='header__link') get started
+        section(class='services' id='services')
+            h2(class='services__heading') services
+            p(class='services__description') We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
+            div(class='container')
+                each val in servicesItems
+                    div(class='services-item' data-aos='zoom-in' data-aos-delay='200')
+                        div(class='services-item__icon')
+                            i(class=`fa ${val.iconClass}`)
+                        h3(class='services-item__title')= val.title
+                        p(class='services-item__text')= val.text
+        section(class='about' id='about')
+            h2(class='about__heading') about us
+            p(class='about__description') Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+            div(class='about__text')
+                p(class='about__paragraph' data-aos='fade-right') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.
+                p(class='about__paragraph' data-aos='fade-left') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.
+            div(class='about__carousel owl-carousel' id='aboutCarousel')
+                each val, index in teamItems
+                    div(class='about-item' data-aos='zoom-in')
+                        div(class='about-item__image-holder')
+                            div(class='about-item__overlay')
+                                div(class='about-item__socials')
+                                    each v, i in val.socials
+                                        a(
+                                            href=`${v}`
+                                            class='about-item__social-link'
+                                            aria-label=`${val.name} ${i}`
+                                        )
+                                            i(class=`fa fa-${i}`)
+                            img(
+                                src=`images/about${index + 1}.png`
+                                alt=`${val.name}`
+                                class='about-item__image'
+                            )
+                        h3(class='about-item__name')= val.name
+                        p(class='about-item__post')= val.post
+        section(class='works' id='works')
+            h2(class='works__heading') works
+            ul(class='works__filters')
+                li(class='works__filter' data-filter='all') All
+                li(class='works__filter' data-filter='.branding') Branding
+                li(class='works__filter' data-filter='.design') Design
+                li(class='works__filter' data-filter='.development') Development
+                li(class='works__filter' data-filter='.strategy') Strategy
+            div(class='works__container' id='worksContainer')
+                each val, index in worksItems
+                    div(class=`works-item mix ${val.category}`)
+                        img(
+                            src=`images/works${index + 1}.png`
+                            class='works-item__image'
+                            alt=`${val.title}`
+                        )
+                        div(class='works-item__overlay')
+                            div(class='works-item__info')
+                                h3(class='works-item__title')= val.title
+                                p(class='works-item__category')= ucfirst(val.category)
+                                a(href='#' class='works-item__full-info') view
+                                    i(class='fa fa-angle-right')
+        div(class='get-in-touch')
+            div(class='get-in-touch__content')
+                p(class='get-in-touch__text') Do you like OUR WORK so far?Let's talk about YOUR PROJECT!
+                a(href='#contact' class='get-in-touch__link') get in touch
+        section(class='blog' id='blog')
+            h2(class='blog__heading') recent blog posts
+            p(class='blog__description') Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+            div(class='container')
+                each val, index in blogItems
+                    article(class='blog-item')
+                        div(class='blog-item__image-holder' data-aos='fade-right')
+                            img(
+                                src=`images/blog${index + 1}.png`
+                                class='blog-item__image'
+                                alt=`Blog_Item_Image_${index + 1}`
+                            )
+                        div(class='blog-item__info' data-aos='fade-left')
+                            div(class='blog-item__data')
+                                div(class='blog-item__date')
+                                    div(class='blog-item__day')= val.day
+                                    div(class='blog-item__month')= val.month
+                                div(class='blog-item__heading')
+                                    h3(class='blog-item__title')= val.title
+                                    i(class='blog-item__author-category')
+                                        | By
+                                        |
+                                        span(class='blog-item__author')= val.author
+                                        |
+                                        | in
+                                        |
+                                        span(class='blog-item__category')= val.category
+                            p(class='blog-item__short-description')= val.shortDescription
+                            a(href='#' class='blog-item__link') read more
+        div(class='clients' id='clients')
+            div(class='companies')
+                ul(class='companies__list')
+                    each val, index in companiesItems
+                        li(class='companies__item')
+                            img(
+                                src=`images/clients${index + 1}.png`
+                                alt=`${val}`
+                                class='companies__image'
+                            )
+            div(class='testimonials owl-carousel' id='testimonialsCarousel')
+                each val in testimonialsItems
+                    div(class='testimonials-item')
+                        p(class='testimonials-item__text')= val.text
+                        p(class='testimonials-item__author')= val.author
+        section(class='contact' id='contact')
+            h2(class='contact__heading') get in touch
+            p(class='contact__description') Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+            div(class='container')
+                div(class='contact-data' data-aos='fade-right')
+                    each val in contactDataItems
+                        div(class='contact-data-item')
+                            div(class='contact-data-item__icon')
+                                i(class=`fa ${val.iconClass}`)
+                            div(class='contact-data-item__info')
+                                h3(class='contact-data-item__type')= val.type
+                                p(class='contact-data-item__description') !{val.data}
+                div(class='contact-form' data-aos='fade-left')
+                    form(class='form')
+                        div(class='form__row')
+                            +input('text', 'name', 'your name')
+                            +input('email', 'email', 'your email')
+                        div(class='form__row')
+                            +input('text', 'subject', 'your subject')
+                            +input('text', 'company', 'company name')
+                        div(class='form__row')
+                            div(class='form__textarea-block')
+                                textarea(
+                                    class='form__textarea'
+                                    name='message'
+                                    placeholder='write your message'
+                                    required
+                                )
+                        div(class='form__row')
+                            button(
+                                type='submit'
+                                class='form__button'
+                            ) Send message
+                            p(class='form__comment')
+                                span *
+                                |
+                                | We’ll contact you as as possible. We don’t reply on Monday.
+        footer(class='footer')
+            div(class='socials')
+                each val in companySocials
+                    a(
+                        href=`${val.link}`
+                        title=`${val.name}`
+                        class='socials__item'
+                    )
+                        i(class=`fa fa-${val.className}`)
+            p(class='license') © 2015 Startup, Designed by ShapedTheme

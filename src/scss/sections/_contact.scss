@@ -1,0 +1,146 @@
+@include pl-fade-out();
+.contact {
+  @include stn-padding();
+  &__heading {
+    @include stn-heading();
+  }
+  &__description {
+    @include stn-description();
+  }
+  .container {
+    @include container($pd-l: 0, $pd-r: 0);
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.contact-data {
+  width: calc(380 / 1170 * 100%);
+  padding: 0 15px;
+  text-align: left;
+  &-item {
+    display: flex;
+    margin-bottom: 30px;
+    &__icon {
+      width: 27px;
+      font-size: 18px;
+    }
+    &__info {
+      flex-grow: 1;
+    }
+    &__type {
+      text-transform: uppercase;
+      font-family: $mt;
+      margin: 3px 0 10px;
+    }
+    &__description {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+.contact-form {
+  width: calc(790 / 1170 * 100%);
+  padding: 0 15px;
+}
+.form {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    &:last-child {
+      padding: 0 15px;
+    }
+  }
+  &__input-block {
+    width: calc(50% - 30px);
+    margin: 0 15px 20px;
+  }
+  &__textarea-block {
+    width: calc(100% - 30px);
+    margin: 0 15px 20px;
+  }
+  &__input,
+  &__textarea,
+  &__button {
+    border: 1px solid $gray;
+    color: $gray;
+    font: {
+      family: $rs;
+      size: 14px;
+      weight: 400;
+    }
+    &:focus {
+      outline: 0;
+      border-color: $red;
+    }
+  }
+  &__input, 
+  &__textarea {
+    width: 100%;
+
+  }
+  &__input {
+    height: 43px;
+    padding: 0 12px;
+  }
+  &__textarea {
+    height: 103px;
+    resize: none;
+    padding: 12px;
+    overflow: auto;
+  }
+  &__button {
+    height: 45px;
+    width: 168px;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin-right: 15px;
+  }
+  &__comment {
+    margin-top: 16px;
+    line-height: 20px;
+    span {
+      color: $red;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-data,
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form {
+    order: -1;
+  }
+  .contact-data {
+    margin: 25px 15px 0;
+    display: flex;
+    justify-content: space-around;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 10px;
+      &__icon {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-data {
+    flex-direction: column;
+  }
+  .form {
+    &__row {
+      justify-content: center;
+    }
+    &__input-block {
+      width: calc(100% - 30px);
+    }
+  }
+}

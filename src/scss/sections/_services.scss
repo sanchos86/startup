@@ -1,0 +1,51 @@
+.services {
+    @include stn-padding();
+    &__heading {
+        @include stn-heading();
+    }
+    &__description {
+        @include stn-description();
+    }
+    .container {
+        @include container($pd-l: 0, $pd-r: 0);
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.services-item {
+    width: calc(33.333333% - 30px);
+    margin: 70px 15px 0;
+    &:hover {
+        .services-item__icon {
+            background-color: $red;
+            border-color: $red;
+            color: $white;
+        }
+    }
+    &__icon {
+        margin: 0 auto 30px;
+        width: 85px;
+        height: 85px;
+        border: 1px solid $gray;
+        border-radius: 50%;
+        line-height: 85px;
+        font-size: 40px;
+        color: $red;
+        transition: all .3s;
+    }
+    &__title {
+        font-family: $mt;
+        text-transform: uppercase;
+    }
+    &__text {
+        margin-top: 25px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+    .services-item {
+        width: calc(100% - 30px);
+        margin-top: 50px;
+    }
+}

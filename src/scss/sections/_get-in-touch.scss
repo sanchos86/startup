@@ -1,0 +1,54 @@
+.get-in-touch {
+    position: relative;
+    min-height: 369px;
+    background-image: url(../images/get-in-touch.png);
+    background-size: cover;
+    background-position: center;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(192,48,28,.6);
+    }
+    &__content {
+        @include stn-padding();
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+    }
+    &__text {
+        @include container($mw: 520px);
+        color: $white;
+        font-size: 30px;
+        line-height: 44px;
+    }
+    &__link {
+        display: inline-block;
+        width: 180px;
+        height: 47px;
+        margin-top: 40px;
+        line-height: 47px;
+        border: 1px solid $white;
+        border-radius: 2px;
+        text-transform: uppercase;
+        color: $white;
+        background-color: transparent;
+        transition: all .3s;
+        font: {
+            family: inherit;
+            size: 18px;
+            weight: 400;
+        }
+        &:hover {
+            background-color: $white;
+            color: $red;
+            cursor: pointer;
+        }
+    }
+}
